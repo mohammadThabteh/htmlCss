@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 1% 15%;
+            color:rgba(28, 13, 68, 0.8);
+            font-size: medium;
+            
+
+        }
+        body {
+            background-color:darkseagreen;
+            
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, minmax(5rem, auto));
+            background-color: rgb(104, 203, 236);
+            grid-gap: 3%;
+            padding: 3%;
+            height: 500px;
+            padding-bottom: 5%;
+            
+        }
+        #screen {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: aliceblue;
+            text-align: center;
+            border-bottom: 10px rgba(34, 66, 77, 0.29) solid;
+
+        }
+        .num {
+            background-color: white;
+            text-align: center;   
+            padding-top: 30%;
+             border-bottom: 10px rgba(34, 66, 77, 0.29) solid;
+        }
+        #cal {
+            background-color: darkkhaki;
+        }
+        #del {
+            background-color: rgba(238, 124, 124, 0.808);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <div  id="screen"></div>
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num" id="cal">+</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        <div class="num" id="cal">-</div>
+        <div class="num">7</div>
+        <div class="num">8</div>
+        <div class="num">9</div>
+        <div class="num" id="cal">*</div>
+        <div class="num" id="del">c</div>
+        <div class="num">0</div>
+        <div class="num">=</div>
+        <div class="num" id="cal">/</div>
+
+    </div>
+    
+</body>
+</html>

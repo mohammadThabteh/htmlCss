@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 65px;
+    background-color: rgb(94, 217, 217);
+}
+.navbar {
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+button{
+    border: 2px white solid;
+    background-color: rgb(94, 217, 217);
+    margin-top: 10px;
+    border-radius: 20%;
+    height: 40px;
+    width: 80px;
+}
+ul a,
+i {
+    padding-top: 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(255, 250, 250);
+    font-size: 20px;
+}
+.container {
+width: 100%;
+height: 70vh;
+background-color: rgb(61, 0, 107);
+display: flex;
+align-items: center;
+justify-content: end;
+
+}
+.left {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 0, 107);
+    width: 50%;
+}
+img {
+    height: 70vh;
+    width: 100%;
+}
+.right {
+    width: 50%;
+}
+.text-container {
+    padding-top: 10px;
+    height:10vh ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+}
+ .container h1, p {
+    text-align: center;
+    color: rgb(252, 252, 252);
+    
+}
+.container-2 {
+    justify-content: space-around;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+.container-2 div h1{ 
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+    width: 15%;
+    height: 25vh;
+}

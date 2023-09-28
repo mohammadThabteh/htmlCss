@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .main {
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 1%;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7,
+        .item8,
+        .item9,
+        .item10,
+        .item11,
+        .item12 {
+            background-color: lightgray;
+
+        }
+
+        .sub1,
+        .sub2,
+        .sub3,
+        .sub4,
+        .sub1-h,
+        .sub2-h,
+        .sub1-v,
+        .sub2-v {
+            background-color: gray;
+
+
+        }
+
+        .item2,
+        .item3,
+        .item9,
+        .item12 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 2%;
+
+
+        }
+
+        .item6 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 2%;
+        }
+
+        .item7 {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="item1">item 1</div>
+
+        <div class="item2">
+
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+            <div class="sub3">sub3</div>
+            <div class="sub4">sub4</div>
+
+        </div>
+
+        <div class="item3">
+
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+            <div class="sub3">sub3</div>
+            <div class="sub4">sub4</div>
+
+        </div>
+
+        <div class="item4">item 4</div>
+
+        <div class="item5">item 5</div>
+
+        <div class="item6">
+
+            <div class="sub1-h">sub1-h</div>
+            <div class="sub2-h">sub2-h</div>
+
+        </div>
+
+        <div class="item7">
+
+            <div class="sub1-v">sub1-v</div>
+            <div class="sub2-v">sub2-v</div>
+
+        </div>
+
+        <div class="item8"> item 8 </div>
+
+        <div class="item9">
+
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+            <div class="sub3">sub3</div>
+            <div class="sub4">sub4</div>
+
+        </div>
+
+        <div class="item10">item 10</div>
+
+        <div class="item11">item 11</div>
+
+        <div class="item12">
+
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+            <div class="sub3">sub3</div>
+            <div class="sub4">sub4</div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

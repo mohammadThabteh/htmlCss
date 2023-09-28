@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 40px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin-left: 20em;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            margin-left: 50px;
+            font-weight: 900;
+        }
+
+        li a span {
+            color: rgb(44, 154, 53);
+            font-weight: 900;
+        }
+
+        .contHeader {
+            display: flex;
+        }
+
+        .contHeader i {
+            margin-right: 10px;
+        }
+
+        .contHeader h6 {
+            margin-right: 5px;
+        }
+
+        span .span1 {
+            position: absolute;
+            top: 15px;
+            background-color: rgb(44, 154, 53);
+            border-radius: 50%;
+            padding: 2px;
+            font-size: 9px;
+            right: 250px;
+        }
+
+        span .span2 {
+            position: absolute;
+            top: 15px;
+            background-color: rgb(44, 154, 53);
+            border-radius: 50%;
+            padding: 2px;
+            font-size: 9px;
+            right: 230px;
+        }
+
+        .Search_Number span {
+            display: none;
+        }
+
+        .continerSectionOne {
+            display: flex;
+        }
+
+        .menu {
+            margin-left: 50px;
+            width: 300px;
+            border: 1px solid rgb(44, 154, 53);
+        }
+
+        .menu .h1Continer {
+            background-color: rgb(44, 154, 53);
+            display: flex;
+            color: white;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .menuContiner {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .menuContiner p {
+            padding: 10px;
+        }
+
+        .classh4 {
+            display: flex;
+        }
+
+        .classh4 h4 {
+            margin-left: 10px;
+        }
+
+        .Search_Number {
+            display: flex;
+            width: 1000px;
+            justify-content: space-between;
+        }
+
+        select {
+            border: none;
+            background-color: white;
+            font-size: 15px;
+        }
+
+        .search button {
+            background-color: rgb(44, 154, 53);
+            border: none;
+            padding: 10px;
+            width: 70px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .search input {
+            border: none;
+            padding: 10px;
+            width: 400px;
+            border-left: 1px solid gray;
+        }
+
+        form {
+            border: 1px solid gray;
+            background-color: #fff;
+            width: auto;
+            height: 45px;
+            margin-left: 100px;
+            display: flex;
+        }
+
+        .continerSectionOne {
+            margin-top: 40px;
+        }
+
+        .call {
+            display: flex;
+        }
+
+        .call i {
+            color: rgb(42, 195, 55);
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .callContiner {
+            padding-top: 10px;
+        }
+
+        .BgImg {
+            background-image: url('/banner.jpg');
+            background-repeat: no-repeat;
+            height: 100%;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+
+        .imgCont2 {
+            padding-left: 60px;
+            padding-top: 80px;
+        }
+
+        .imgCont2 h5,
+        p {
+            padding: 10px;
+        }
+
+        .imgCont2 h1 {
+            font-weight: 900;
+        }
+
+        .imgCont2 button {
+            margin: 5px;
+            padding: 15px;
+            background-color: rgb(44, 154, 53);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        h5 {
+            color: rgb(44, 154, 53);
+        }
+
+        .continerTwoCard {
+            display: flex;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 360px;
+            margin-left: 1%;
+            background-color: rgb(245, 245, 245);
+        }
+
+        .card img {
+            width: 150px;
+        }
+
+        .contHeader {
+            display: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        .BgImg {
+            margin-top: 30px;
+        }
+
+        .menuContiner {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 250px;
+        }
+
+        .menuContiner p {
+            text-decoration: underline;
+        }
+
+        .continerTwoCard {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .AllContinerSearch span {
+            display: block;
+        }
+
+        .AllContinerSearch span i {
+            right: 15px;
+            position: absolute;
+            background-color: rgb(42, 195, 55);
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        .Search_Number {
+            display: none;
+        }
+
+        .contHeader {
+            display: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        .BgImg {
+            margin-top: 30px;
+        }
+
+        .menuContiner {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 250px;
+        }
+
+        .menuContiner {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 250px;
+        }
+
+        .menuContiner p {
+            text-decoration: underline;
+        }
+
+        .continerTwoCard {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .AllContinerSearch span {
+            display: block;
+        }
+
+        .AllContinerSearch span i {
+            right: 15px;
+            top: 45px;
+            position: absolute;
+            background-color: rgb(42, 195, 55);
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .Search_Number {
+            display: none;
+        }
+
+        .continerSectionOne {
+            display: block;
+        }
+
+        .BgImg {
+            margin-left: 10px;
+        }
+
+        li a {
+            margin-left: 10px;
+        }
+
+        .menu {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><span>HOME</span></a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="contHeader">
+                <span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="span1">1</span>
+                </span>
+                <span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="span2">2</span>
+                </span>
+                <h6>item <h5>$150.00</h5>
+                </h6>
+            </div>
+        </nav>
+    </header>
+    <div class="continerSectionOne">
+        <div class="menu">
+            <div class="h1Continer">
+                <div class="classh4">
+                    <i class="fa-solid fa-bars"></i>
+                    <h4>All departments</h4>
+                </div>
+                <i id="classi" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="menuContiner">
+                <p>Fresh Meat</p>
+                <p>Vegatables</p>
+                <p>Fruit & Nut Gifts</p>
+                <p>Fresh Beeries</p>
+                <p>Ocaen Foods</p>
+                <p>Butter & Eggs</p>
+                <p>Fast Food</p>
+                <p>Fresh Onion</p>
+                <p>Papayaya & Crisps</p>
+                <p>Oatmeal</p>
+                <p>Fresh Bananas</p>
+            </div>
+        </div>
+        <div class="AllContinerSearch">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <div class="Search_Number">
+                <div class="search">
+                    <form>
+                        <select>
+                            <option value="0">All Categories</option>
+                        </select>
+                        <input placeholder="What do you need?" type="search">
+                        <button>SEARCH</button>
+                    </form>
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="callContiner">
+                        <h5>+65 11.188.188</h5>
+                        <p>support 24/7 time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="BgImg">
+                <div class="imgCont2">
+                    <h5>FRUIT FRESH</h5>
+                    <h1>Vegetable</h1>
+                    <h1>100% Oragnic</h1>
+                    <p>Free Pickup and Delivery Availtable</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="continerTwoCard">
+
+        <div class="card">
+            <center>
+
+                <img src="/cat-1.jpg">
+                <h3>VEGATABLES</h3>
+            </center>
+        </div>
+        <div class="card">
+            <center>
+
+                <img src="/cat-2.jpg">
+                <h3>DRINK FRUITS</h3>
+            </center>
+        </div>
+        <div class="card">
+            <center>
+                <img src="/cat-4.jpg">
+                <h3>DRINK FRUITS</h3>
+            </center>
+        </div>
+        <div class="card">
+            <center>
+                <img src="img/cat-1.jpg">
+                <h3>FRESH FRUIT</h3>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

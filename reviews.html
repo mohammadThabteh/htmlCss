@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-radius: 2px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: white;
+            height: 50px;
+            padding-top: 20px;
+        }
+
+        header img {
+            width: 130px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav h1 {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul a,
+        i {
+            text-decoration: none;
+            margin-left: 30px;
+            color: rgb(55, 55, 55);
+           
+        }
+
+        ul span {
+            color: orange;
+        }
+
+        .ContainerAll {
+            margin-top: 50px;
+        }
+
+        .hdContainer {
+            padding-top: 40px;
+            height: 100px;
+            background-color: rgb(237, 248, 255);
+        }
+
+        ul a {
+            background-color: white;
+            padding: 20px;
+            color: black;
+        }
+
+        .hdContainer ul span a {
+            background-color: orange;
+            color: white;
+        }
+        .ContainerTwo {
+            display: flex;
+            margin-top: 5em;
+        }
+        .ContainerTwoOne,
+        .ContainerTwoTwo {
+            width: 50%;
+        }
+        .ContainerTwoTwo {
+            display: flex;
+            flex-direction: column;
+        }
+        .textInputBox,
+        .textInputBox2,
+        .textInputBox3,
+        .textInputBox4 {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        input {
+            height: 40px;
+            border: 1px solid #eeeeee;
+            width: 90%;
+        }
+        button {
+            width: 150px;
+            padding: 10px;
+            background-color: orange;
+            border: none;
+        }
+        .contTwoOne {
+            margin-left: 20px;
+
+        }
+        .textName img {
+            width: 75px;
+        }
+        .contName2 {
+            display: flex;
+        }
+        .contName2 img {
+            width: 50px;
+            border-radius: 50%;
+        }
+        .contName1 {
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/logo5.png"></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#"><span>SHOP</span></a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <span class="none">
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </span>
+            </ul>
+            <h1><i class="fa-solid fa-ellipsis-vertical"></i></h1>
+        </nav>
+    </header>
+    <div class="ContainerAll">
+
+        <div class="hdContainer">
+            <ul>
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Specification</a></li>
+                <li><a href="#">Comments</a></li>
+                <span>
+                    <li><a href="#">Reviews</a></li>
+                </span>
+            </ul>
+        </div>
+        <div class="ContainerTwo">
+            <div class="ContainerTwoOne">
+                <div class="contTwoOne">
+                    <div class="cont1"><img src="/logo5.png" alt=""></div>
+                </div>
+                <div class="contName">
+                    <div class="contName1">
+                        <div class="contName2">
+                            <div class="textName">
+                                <h6>mohammad</h6>
+                                <img src="./gridFlexCss/Guy-Baron.jpg">
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat debitis, quos,
+                            obcaecati provident omnis consectetur, 
+                            adipisci? Numquam dolorum repellat commodi suscipit, eum quo?</p>
+                    </div>
+                    <div class="contName1">
+                        <div class="contName2">
+                            <div class="textName">
+                                <h6>rami</h6>
+                                <img src="./gridFlexCss/guy-benson-1050x1050.webp">
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat debitis, quos,
+                            obcaecati provident omnis consectetur,
+                            adipisci? Numquam dolorum repellat commodi suscipit, eum quo?</p>
+                    </div>
+                    <div class="contName1">
+                        <div class="contName2">
+                            
+                            <div class="textName">
+                                <h6>steven</h6>
+                                <img src="./gridFlexCss/download.jpeg">
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat debitis, quos,
+                            obcaecati provident omnis consectetur, 
+                            adipisci? Numquam dolorum repellat commodi suscipit, eum quo?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ContainerTwoTwo">
+                <h1>Add a Review</h1>
+                <p>Your Rating: <img src=""> Outstanding</p>
+                <div class="textInputBox">
+                    <input type="text" placeholder="Your Full bane">
+                </div>
+                <div class="textInputBox2">
+                    <input placeholder="Email Addrees" type="email">
+
+                </div>
+                <div class="textInputBox3">
+                    <input placeholder="Phone Number" type="text">
+                </div>
+                <div class="textInputBox3">
+                    <input placeholder="Review" type="text">
+                </div>
+                <button>SUBMIT NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
